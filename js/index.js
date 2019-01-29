@@ -5,6 +5,10 @@ const btn1 = document.querySelector('#one');
 const btn2 = document.querySelector('#two');
 const btn3 = document.querySelector('#three');
 const html = document.querySelector('html');
+const homeLink = document.querySelector('#home');
+const aboutLink = document.querySelector('#about');
+const blogLink = document.querySelector('#blog');
+const contactLink = document.querySelector('#contact');
 
 logoHeader.addEventListener('mouseover', e => {
     logoHeader.style.color = '#17A2B8';
@@ -27,10 +31,32 @@ btn1.addEventListener('click', e => {
 });
 btn2.addEventListener('dblclick', e => {
     alert('You double clicked this button and signed up for Mountain Excursion twice!');
+    e.stopPropagation();
 });
 btn3.addEventListener('dragstart', e => {
     alert('Why are you dragging me?  I was comfortable where I was!');
 });
 html.addEventListener('copy', e => {
     alert("Copycat!");
+});
+homeLink.addEventListener('mouseenter', e => {
+    homeLink.style.color = 'orange';
+    e.preventDefault();
+})
+homeLink.addEventListener('mouseleave', e => {
+    alert("You've added color to the Home page link! Try the other links!");
+});
+aboutLink.addEventListener('mouseenter', e => {
+    aboutLink.style.color = 'lightgreen',
+    e.preventDefault;
+});
+blogLink.addEventListener('mouseenter', e => {
+    blogLink.style.color = 'lightblue';
+    e.preventDefault;
+});
+contactLink.addEventListener('mouseenter', e => {
+    contactLink.style.color = 'orchid';
+});
+html.addEventListener('dblclick', e => {
+    alert('You double clicked on the page');
 });
