@@ -62,4 +62,7 @@ html.addEventListener('dblclick', e => {
 });
 
 //Stretch
-TweenMax.to('.logo-heading', 2, {x:'200%', rotation: 360});
+TweenMax.to('.logo-heading', 2, {x:'210%', rotation: 360});
+TweenMax.to('#pic1', 2, {rotation: 900});
+TweenMax.to('#pic2', 2, {rotation: 720});
+TweenMax.to('#pic3', 2, {rotation: 360});
