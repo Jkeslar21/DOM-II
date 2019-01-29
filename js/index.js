@@ -60,3 +60,6 @@ contactLink.addEventListener('mouseenter', e => {
 html.addEventListener('dblclick', e => {
     alert('You double clicked on the page');
 });
+
+//Stretch
+TweenMax.to('.logo-heading', 2, {x:'200%', rotation: 360});
